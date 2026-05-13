@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 using Cysharp.Threading.Tasks;
 using Unity.VisualScripting;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.UI;
 
 public class Main : MonoBehaviour
@@ -20,10 +21,18 @@ public class Main : MonoBehaviour
         GameObject prefab = handle1.Result;
         GameObject cube = Instantiate(prefab);
 
-        var handle2 = Addressables.LoadAssetAsync<Texture2D>("Assets/Textures/P1.jpg");
-        await handle2.Task;
-        Texture2D texture2D = handle2.Result;
-        image.texture = texture2D;
-        image.GetComponent<RectTransform>().sizeDelta = new Vector2(texture2D.width, texture2D.height);
+        // var handle2 = Addressables.LoadAssetAsync<Texture2D>("Assets/Textures/P1.jpg");
+        // await handle2.Task;
+        // if (handle2.Status == AsyncOperationStatus.Succeeded)
+        // {
+        //     Texture2D texture2D = handle2.Result;
+        //     image.texture = texture2D;
+        //     image.GetComponent<RectTransform>().sizeDelta = new Vector2(texture2D.width, texture2D.height);
+        // }
+        // else
+        // {
+        //     Debug.Log("Failed to load texture");
+        // }
+        
     }
 }
