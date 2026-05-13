@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 9a543371defa7444ca313fc98f3f6c95
   m_currentHash:
     serializedVersion: 2
-    Hash: da797c357b42578d15e3c0ca17b202d3
+    Hash: 67dc20b43e80cd619aed74cdc7fa8987
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
       m_ProfileName: Default
       m_Values:
       - m_Id: 3bee4f0703e36d6409913b7eba5be191
-        m_Value: https://snnacky.github.io/Addressable/RemoteMaterials/
+        m_Value: https://snnacky.github.io/Addressable/RemoteMaterials/StandaloneWindows64/[BuildTarget]
       - m_Id: 5dcc86f68b6ba594791b95081bb96081
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: 8652516cbd6a99843b96e383e9a342ff
