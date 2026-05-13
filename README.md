@@ -1,2 +1,2 @@
-# Addressables
-用于测试Addressables
+# AddressableTest
+用于测试addressables
