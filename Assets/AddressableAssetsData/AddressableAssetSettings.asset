@@ -35,9 +35,9 @@ MonoBehaviour:
   m_CheckForContentUpdateRestrictionsOption: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: 
+    m_Id: 8652516cbd6a99843b96e383e9a342ff
   m_RemoteCatalogLoadPath:
-    m_Id: 
+    m_Id: 3bee4f0703e36d6409913b7eba5be191
   m_ContentStateBuildPathProfileVariableName: <default settings path>
   m_CustomContentStateBuildPath: 
   m_ContentStateBuildPath: 
@@ -58,7 +58,7 @@ MonoBehaviour:
       m_ProfileName: Default
       m_Values:
       - m_Id: 3bee4f0703e36d6409913b7eba5be191
-        m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+        m_Value: https://snnacky.github.io/Addressable/RemoteMaterials/
       - m_Id: 5dcc86f68b6ba594791b95081bb96081
         m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
       - m_Id: 8652516cbd6a99843b96e383e9a342ff
