@@ -87,7 +87,7 @@ public class Main : MonoBehaviour
         var handle2 = Addressables.LoadAssetAsync<Sprite>("P1");
         await handle2.Task;
         Sprite sp = handle2.Result;
-        image.GetComponent<SpriteRenderer>().sprite = sp;
+        image.sprite = sp;
 
     }
 }
