@@ -22,13 +22,13 @@ public class Main : MonoBehaviour
     {
         await Addressables.InitializeAsync().Task;
 
-        var checkHandle = Addressables.CheckForCatalogUpdates(false);
+        var checkHandle = Addressables.CheckForCatalogUpdates(false);//查看服务器是否更新
         await checkHandle.Task;
 
         if (checkHandle.Status == AsyncOperationStatus.Succeeded && checkHandle.Result.Count > 0)
         {
             Debug.Log("检测到更新");
-            var updateHandle = Addressables.UpdateCatalogs(checkHandle.Result, false);
+            var updateHandle = Addressables.UpdateCatalogs(checkHandle.Result, false);//拉取新账本
             await updateHandle.Task;
             
             Addressables.Release(updateHandle);
@@ -53,9 +53,10 @@ public class Main : MonoBehaviour
         if (totalSize > 0)
         {
            
-            Debug.Log($"需要下载的资源大小: {totalSize / 1024f / 1024f:F2} MB");
+            Debug.Log($"需要下载的资源大小: {totalSize / 1024f / 1024f:F2} MB");//小数点后俩位
             var downloadHandle = Addressables.DownloadDependenciesAsync(allKeys, Addressables.MergeMode.Union);//加载并去重
 
+            //显示进度
             while (!downloadHandle.IsDone)
             {
                 float progress = downloadHandle.PercentComplete;
@@ -79,7 +80,7 @@ public class Main : MonoBehaviour
 
     async UniTask Tast()
     {
-        var handle1 = Addressables.LoadAssetAsync<GameObject>("Circle");
+        var handle1 = Addressables.LoadAssetAsync<GameObject>("Circle");//从本地获取资源(提前下载好了)
         await handle1.Task;
         GameObject prefab = handle1.Result;
         GameObject cube = Instantiate(prefab);
